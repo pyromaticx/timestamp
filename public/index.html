@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class='container'>
+    <div class='text-center'>
+      <h1>Timestamp Microservice api</h1>
+    </div>
+    <div>
+      <h3>Accepts a string date like 'january 1 2016' and returns:</h3>
+      <code>`{"unix":1451635200000,"natural":"Friday, January 1, 2016"}`</code>
+      <h3>Will pull the first date it identifies out of a string of any length. Will also accept any number larger than 13 digits
+      but will only return a value for the first 13 digits:
+      </h3>
+      <code>/the date is march 3rd 2016</code>
+      <h3>returns:</h3>
+      <code>{"unix":1425369600000,"natural":"Tuesday, March 3, 2016"}</code>
+    </div>
+  </div>
+</body>
+</html>

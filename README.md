@@ -9,7 +9,7 @@ Will pull the first date it identifies out of a string of any length. Will also 
 but will only return a value for the first 13 digits:
 
 ```
-/the date is march 3 2016
+/the date is march 3rd 2016
 ```
 
 returns:

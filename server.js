@@ -22,6 +22,9 @@ function natString(uxTime) {
 
 app.set('port', port);
 app.use(express.static(__dirname + '/public'));
+app.get('/', function(reg, res) {
+    res.sendFile('index.html');
+});
 
 app.get('/:input', function(req, res) {
   // object that will eventually be returned
